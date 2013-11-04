@@ -36,4 +36,12 @@
     <string name="reboot_confirm" product="default">Ваш телефон будет перезагружен.</string>
     <!-- Reboot Progress Dialog. This is shown if the user chooses to reboot the phone. -->
     <string name="reboot_progress">Перезагрузка\u2026</string>
+
+    <!-- ADB over network notification -->
+    <string name="adb_net_active_notification_title">Включён режим отладки по сети</string>
+    <!-- ADB over USB and network notification -->
+    <string name="adb_both_active_notification_title">Режим отладки по USB и сети включен</string>
+    <!-- ADB notification message-->
+    <string name="adb_active_generic_notification_message">Нажмите, чтобы отключить отладку.</string>
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
 </resources>
