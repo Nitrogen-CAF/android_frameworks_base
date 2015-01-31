@@ -46,6 +46,7 @@
     <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
 
     <!-- Global Actions -->
+    <string name="global_action_current_user">Текущий</string>
     <string name="global_action_screenshot">Скриншот</string>
     <string name="global_action_search">Поиск</string>
     <string name="global_action_voicesearch">Голосовой поиск</string>
