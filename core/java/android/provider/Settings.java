@@ -3614,6 +3614,12 @@ public final class Settings {
         public static final String MTP_DIRTY_HACK = "mtp_dirty_hack";
 
         /**
+         * Whether to wake the screen with the volume keys, the value is boolean.
+         * @hide
+         */
+        public static final String VOLUME_WAKE_SCREEN = "volume_wake_screen";
+
+        /**
          * Enable\Disable Bluetooth Battery bar
          * @hide
          */
