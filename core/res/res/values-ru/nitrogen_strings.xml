@@ -50,4 +50,5 @@
     <string name="global_action_screenshot">Скриншот</string>
     <string name="global_action_search">Поиск</string>
     <string name="global_action_voicesearch">Голосовой поиск</string>
+    <string name="global_action_torch">Фонарик</string>
 </resources>
