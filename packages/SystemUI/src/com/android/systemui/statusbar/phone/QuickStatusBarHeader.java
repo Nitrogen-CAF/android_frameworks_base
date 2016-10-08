@@ -136,6 +136,7 @@ public class QuickStatusBarHeader extends BaseStatusBarHeader implements
         mSettingsButton = (SettingsButton) findViewById(R.id.settings_button);
         mSettingsContainer = findViewById(R.id.settings_button_container);
         mSettingsButton.setOnClickListener(this);
+        mSettingsButton.setOnLongClickListener(this);
 
         mAlarmStatusCollapsed = findViewById(R.id.alarm_status_collapsed);
         mAlarmStatus = (TextView) findViewById(R.id.alarm_status);
@@ -374,6 +375,8 @@ public class QuickStatusBarHeader extends BaseStatusBarHeader implements
             startDateLongClickActivity();
         } else if (v == mMultiUserSwitch) {
             startUserLongClickActivity();
+        } else if (v == mSettingsButton) {
+            startNitrogenActivity();
         }
         return false;
     }
@@ -386,6 +389,13 @@ public class QuickStatusBarHeader extends BaseStatusBarHeader implements
     private void startClockActivity() {
         mActivityStarter.startActivity(new Intent(AlarmClock.ACTION_SHOW_ALARMS),
                 true /* dismissShade */);
+    }
+
+    private void startNitrogenActivity() {
+        Intent nIntent = new Intent(Intent.ACTION_MAIN);
+        nIntent.setClassName("com.android.settings",
+            "com.android.settings.Settings$NitrogenSettingsActivity");
+        mActivityStarter.startActivity(nIntent, true /* dismissShade */);
     }
 
     private void startClockLongClickActivity() {
