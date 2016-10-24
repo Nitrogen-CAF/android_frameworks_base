@@ -38,4 +38,6 @@
 
     <!-- Screenshot Delete Toast -->
     <string name="delete_screenshot_toast">Screenshot deleted</string>
+
+    <string name="statusbar_items_title">Statusbar icon</string>
 </resources>
