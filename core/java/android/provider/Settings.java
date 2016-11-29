@@ -6535,6 +6535,15 @@ public final class Settings {
         public static final String CAMERA_DOUBLE_TAP_POWER_GESTURE_DISABLED =
                 "camera_double_tap_power_gesture_disabled";
 
+        /**
+         * Whether the camera double twist gesture to flip between front and back mode should be
+         * enabled.
+         *
+         * @hide
+         */
+        public static final String CAMERA_DOUBLE_TWIST_TO_FLIP_ENABLED =
+                "camera_double_twist_to_flip_enabled";
+
        /**
          * Status bar battery %
          * 0: Hide the battery percentage
@@ -6543,7 +6552,6 @@ public final class Settings {
          * @hide
          */
         public static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
-
 
         /**
          * Display style of the status bar battery information
@@ -6564,20 +6572,21 @@ public final class Settings {
         public static final String STATUS_BAR_BATTERY_STYLE_TILE = "status_bar_battery_style_tile";
 
         /**
-         * Whether the camera double twist gesture to flip between front and back mode should be
-         * enabled.
+         * Battery icon color while charging
          *
          * @hide
          */
-        public static final String CAMERA_DOUBLE_TWIST_TO_FLIP_ENABLED =
-                "camera_double_twist_to_flip_enabled";
+        public static final String STATUS_BAR_CHARGE_COLOR = "status_bar_charge_color";
 
         /**
-          * battery icon color when charging
-          *
-          * @hide
-        */
-         public static final String STATUS_BAR_CHARGE_COLOR = "status_bar_charge_color";
+         * Charging symbol near battery text percentage
+         * 0: no symbol
+         * 1: flash symbol
+         * 2: tilde symbol
+         * default: 0
+         * @hide
+         */
+        public static final String TEXT_CHARGING_SYMBOL = "text_charging_symbol";
 
         /**
          * Control whether Night display is currently activated.
