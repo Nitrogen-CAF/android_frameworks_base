@@ -32,4 +32,7 @@
     <string name="screenrecord_notif_pointer_off">Скрыть нажатия</string>
     <!-- Screen record notification error title -->
     <string name="screenrecord_notif_error">Невозможно записать экран</string>
+
+  <!-- Screenshot Delete Toast -->
+  <string name="delete_screenshot_toast">Скриншот удалён</string>
 </resources>
