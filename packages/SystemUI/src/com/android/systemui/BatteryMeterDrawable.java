@@ -105,17 +105,6 @@ public class BatteryMeterDrawable extends Drawable implements
     private boolean mForceChargeBatteryText;
     private int  mTextChargingSymbol;
     private boolean mListening;
-    private static final int ADD_LEVEL = 10;
-    private static final int ANIM_DURATION = 500;
-    private int mAnimOffset;
-    private boolean mCharging;
-
-    private final Runnable mInvalidate = new Runnable() {
-        @Override
-        public void run() {
-            invalidateSelf();
-        }
-    };
 
     private float mTextX, mTextY; // precalculated position for drawText() to appear centered
 
@@ -253,7 +242,12 @@ public class BatteryMeterDrawable extends Drawable implements
     }
 
     private void postInvalidate() {
-        mHandler.post(mInvalidate);
+        mHandler.post(new Runnable() {
+            @Override
+            public void run() {
+                invalidateSelf();
+            }
+        });
     }
 
     public void setBatteryController(BatteryController batteryController) {
